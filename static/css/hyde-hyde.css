@@ -462,7 +462,7 @@ blockquote {
   font-style: italic; }
 
 .site__title {
-  font-size: 3rem;
+  font-size: 1.5em;
   margin-bottom: .5rem; }
   .site__title a:hover {
     border: none; }
