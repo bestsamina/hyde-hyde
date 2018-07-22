@@ -9,7 +9,7 @@
 {{ define "footer" -}}
     <div class="container content">
         {{- partial "highlight-js.html" . -}}
-        {{- partial "commenting.html" . -}}
+        {{- partial "commenting.html" .Params.MainSections -}}
     </div>
     {{ partial "footer.html" . }}
 {{- end -}}
