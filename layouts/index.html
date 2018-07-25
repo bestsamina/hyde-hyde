@@ -11,7 +11,7 @@
           <a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ if .Draft }}<sup> <i class="fas fa-pen-square fa-xs"></i></sup>{{ end }}
         </span>
         <span class="item__date">
-          {{ .Date.Format (.Site.Params.dateformat | default "Jan 02, 2017") }}
+          {{ .Date.Format ( .Site.Params.DateFmt | default "Jan 02, 2017") -}}
         </span>
         {{ .Summary }}
         {{ if .Truncated -}}
