@@ -468,8 +468,7 @@ blockquote {
     border: none; }
 
 .site__description {
-  font-size: 1.285rem;
-  font-weight: 300; }
+  font-size: 1rem; }
 
 .social a {
   border: none;
