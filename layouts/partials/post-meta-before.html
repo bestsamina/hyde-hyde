@@ -11,7 +11,15 @@
           in
           {{- $total := sub $total 1 -}}
           {{- range $i, $cat := sort . }}
-              <a class="post__category" href="{{ "/categories/" | relURL }}{{ $cat | urlize }}">{{ $cat | upper }}</a>
+              <!-- If no /-->
+              {{ if in $cat "/" -}}
+              <ul>
+              <a class="post__category" href="{{ "/categories/" | relURL }}{{ $cat | urlize }}">{{ strings.TrimPrefix "/" $cat }}</a>
+              </ul>
+              {{ else }}
+              <a class="post__category" href="{{ "/categories/" | relURL }}{{ $cat | urlize }}">A {{ $cat | upper }}</a>
+              {{- end }}
+              <!-- else ul -->
               {{ if lt $i $total }},{{ end }}
           {{- end -}}
       {{- end -}}
