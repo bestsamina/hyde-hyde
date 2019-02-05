@@ -8,6 +8,9 @@
     {{ end }} 
     {{ partial "post-meta-before.html" . }}
   </header>
+<aside>
+  {{ .TableOfContents }}
+</aside>
   <div class="post">
     {{ .Content }}
   </div>

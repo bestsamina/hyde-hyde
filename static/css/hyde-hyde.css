@@ -55,6 +55,31 @@ tbody tr:nth-child(odd) td,
 tbody tr:nth-child(odd) th {
   background-color: #f9f9f9; }
 
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 20px;
+}
+
+
+aside {
+    #position: absolute;
+    top: 0px;
+    display: block;
+    overflow-y: scroll;
+    font-size: 14px;
+    line-height: 15px;
+    box-shadow: inset 5px 0 5px -5px #29627e;
+}
+
+aside > ul.post__nav {
+    padding-left: 0.8rem;
+}
+
 .container {
   max-width: 38rem;
   padding-left: 1.5rem;
@@ -626,4 +651,3 @@ kbd {
 #references ~ ol {
   font-size: .9rem; }
 
-/*# sourceMappingURL=hyde-hyde.css.map */
