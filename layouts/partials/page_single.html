@@ -12,7 +12,7 @@
   {{ .TableOfContents }}
 </aside>
   <div class="post">
-    {{ .Content }}
+    {{ replace .Content "<!--adsense-->" (partial "adsense-inarticle.html" .) | safeHTML }}
   </div>
   {{ partial "post-meta-after.html" . }}
   {{ partial "post-related.html" . }}
